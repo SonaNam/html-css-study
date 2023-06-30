@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      /* #R(||) G(||) B(||) */
+      /* 빛의 3원색: 다 섞으면 흰색 */
+      /* 0 ~ 255(십진수): 00 ~ ff(16진수)  */
+      /* 16진수 표기법*/
+      background-color: #f9a9e0;
+      /* #FFF */
+      color: #ffff
+    }
+    p { /*10 진수 표기법*/
+      background-color: rgb(red200, green10, blue150);
+    }
+    
+    div {
+      /*rgba(r,g,b,a)*/
+      /*a(alpha): 투명도 값은 0(투명) ~ 1(불투명) 사이의 실수*/
+      /* 배경색이 있다면 배경색이 투명도에 따라서 섞인다. */
+      /* background - color : 배경색, 요소의 범위까지 색이 칠해짐*/
+      /* 16진수 표기법으로 투명도 표기 가능함 */
+      /* rrggbbaa*/
+      color: rgba(200,10,150,0.7);
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem, ipsum.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vero perspiciatis soluta aliquam omnis ratione iste porro quod dolorem maiores? Debitis unde distinctio quam fugit ipsa facere consequatur laborum porro!</p>
+  <div></div>
+</body>
+</html>
