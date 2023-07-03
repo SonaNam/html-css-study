@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        /* 화면에서 숨김 */
+        /* display : none */
+        visibility: hidden;
+      }
+      div:first-child {
+        visibility: hidden;
+      }
+      h1:hover + div {
+        /* div는 기본이 block */
+        /* block: 위에부터 아래로 */
+        /* 너비가 부모의 100%, 높이는 컨텐트 높이 */
+        /*  */
+        display: block;
+      }
+      /* span은 기본적으로 inline */
+      /* 크기제어하려면 inline-block */
+      li {
+        display: inline;
+        width: 0px;
+        height: 100px;
+      }
+      /* span의 크기가 있어 높이 넓이가 지정안됨 */
+      /* 크기제어하려면 inline-block */
+      span {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        /* 컨텐트의 좌우정렬 */
+        /* text-align */
+        text-align: center;
+        border: 1px solid black;
+      }
+      span:nth-of-type {
+        text-decoration: line-through;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: blue;
+      }
+      span:nth-of-type(2) {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quidem sed
+      minus veniam a similique quod nostrum corrupti dignissimos, blanditiis
+      laboriosam delectus odit aliquam earum ipsum sit ducimus cupiditate eaque!
+    </div>
+    <ul>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+    </ul>
+  </body>
+</html>

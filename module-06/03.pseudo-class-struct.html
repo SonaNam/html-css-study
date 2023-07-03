@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* list-style: none; (안에있는 숫자제거 ) */
+      html,
+      body {
+        font-size: 15px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        padding-left: 0.5rem;
+      }
+
+      /* li:first-child { 첫번째요소 ul > li */
+      /* background-color: red; */
+      /* } */
+
+      /* li:last-child { 마지막요소 */
+      /* background-color: blue; */
+      /* }  */
+
+      /* 홀수 */
+      li:nth-child(2n-1) {
+        background-color: brown;
+      }
+      /* 짝수  */
+      li:nth-child(2n) {
+        background-color: blueviolet;
+      }
+      /* 54번째줄 nth-child 는 몇번째 자식요소인지만.. */
+      /* 4번째 자식이 p인 요소를 선택 222p 면 p 4번째가 p가아니면 작동안함*/
+      p:nth-child(4) {
+        /* color: yellow; */
+      }
+      /* nth-of-type는 같은 태그가 몇번쨰 요소인지 */
+      /* p자식 요소에서 3번째   pp2p 이면 마지막p  3번째뒤로도 p가 없음 작동안함*/
+      p:nth-of-type(3) {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <div>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem, ipsum dolor.</p>
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+  </body>
+</html>
