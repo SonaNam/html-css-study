@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 200px;
+        height: 100px;
+        border: 3px solid black;
+      }
+
+      p:nth-of-type(1) {
+        /* 컨텐트가 요소크기 밖으로 나가는 경우 */
+        /* overflow:hidden 숨김 */
+        overflow: hidden;
+      }
+      p:nth-of-type(2) {
+        overflow: scroll;
+      }
+      p:nth-of-type(3) {
+        overflow-y: scroll;
+      }
+      /* 글자수에 따라 적어지면 스크롤바 없어지고 많아지면 생김 */
+      p:nth-of-type(4) {
+        overflow-y: auto;
+      }
+      p:nth-of-type(5) {
+        overflow: hidden;
+        /* 기본: 빈 공간을 기준으로 내림 */
+        /* 텍스트 컨텐트를 아래로 안 내림 */
+        white-space: nowrap;
+
+        /* overflow-x: auto;  x축으로 스크롤바 생김 (가로스크롤 잘안씀 혼남)*/
+        /* text-overflow - 텍스트 넘어가면 ... 처리 */
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic libero fuga
+      ipsum rerum officiis, provident assumenda sequi reprehenderit. Quam
+      explicabo perspiciatis illo totam inventore officiis veritatis, nostrum
+      corporis error voluptate?
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo rem impedit,
+      doloremque mollitia repudiandae aut, atque adipisci veniam sit tenetur
+      deserunt assumenda quam? Natus, ut doloribus? Praesentium voluptatum
+      voluptates laudantium!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo perferendis
+      ab minima quibusdam veritatis. Sunt quaerat possimus dicta libero
+      excepturi praesentium quisquam, perferendis debitis in numquam nisi quo,
+      consequuntur recusandae.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis dolorem
+      qui eaque? Facilis soluta beatae commodi nam possimus temporibus pariatur
+      placeat a quod aut, tempora, ducimus magni explicabo id consequatur.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque
+      architecto cum dolore ea exercitationem rerum alias nulla tenetur atque,
+      labore minima voluptatibus asperiores magnam aspernatur quaerat tempora
+      sed animi!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corporis
+      assumenda qui debitis exercitationem dolores sit commodi perspiciatis.
+      Harum fuga molestias officia nesciunt maxime incidunt quibusdam illum et
+      ratione vero.
+    </p>
+  </body>
+</html>
