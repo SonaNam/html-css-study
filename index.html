@@ -5,37 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-      
+    table >tbody >tr > td {
       background-color: rgb(247, 247, 162);
       background-image: url("./img/2c1c4546512cdc6ff5b250a2bee056be_w.jpeg");
       background-size: cover;
-      
     }
-    
-    
     h1:hover {
       color: #b3f717;
     }
-      
     h1{
       color: #3154f0;
       text-align: center;
       padding: 10px;
     }
     h3{
-     
       padding: 30px;
       text-align: center;
       background-size: 150px;
-      
-      
     }
-    h4{
-       
-      
-    }
-    th{
+    tr{
       font-size: 2.5ex;
       padding: 10px;
       text-align: center;
@@ -51,40 +39,8 @@
       
       padding: 10px;
     }
-    .lost{
-      font-size: 15px;
-      font-style: oblique;
-      padding: 10px;
-      
-    }
- 
-    .list1 {
-     
-      padding: 10px;
-      border-radius: 10px;      
-      text-align: center;
-      /* text-shadow: -5px -5px -5px yellow; */
-      font-size: 20px;
-      font-style:unset
-      
-  
-    }
-    .list2 {
-      
-      padding: 10px;
-      border-radius: 10px;      
-      text-align: center;
-      font-size: 20px;
-      font-style:unset;
-    }
-    .list3 {
-      
-      padding: 10px;
-      border-radius: 10px;      
-      text-align: center;
-      font-size: 20px;
-      font-style:unset;
-    }
+   
+
     table > tbody > tr > td {
       border: 2px solid black;
       border-radius: 10px;      
@@ -128,7 +84,6 @@
       text-align: center;
       font-size: 17px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      color: rgb(133, 134, 28);
       text-shadow:2px 2px 3px #b3f717;
     }
     
@@ -158,8 +113,7 @@
         margin: 20px;
         box-shadow: 10px 10px 10px yellow, 11px 11px 11px greenyellow;
     }
-    
-    
+   
     
     
 
@@ -180,9 +134,11 @@
     <article>
       <h4 a:visited> 순 차 목 록</h4>
       <ul>
+        <center>
         <li class="list1"><a href="#재료"> 재 료 보 기</a></li>
         <li class="list2"><a href="#양념">양 념 보 기</a></li>
         <li class="list3"><a href="#조리순서">조 리 순 서</a></li>
+        </center>
       </ul>
       <h3>🧑 내가 좋아하는 레시피 👩</h3>
         <ul>
@@ -190,25 +146,23 @@
           <div>조리시간 : 30분 이내</div>
           <div>난이도 : 중급</div>
         </ul> 
-        <center>
+       <center>
       <img src="./img/tori.jpg" alt="닭볶음탕" width="400" >
       <a href="/img/계량.PNG"><strong>계량방법</strong></a>
-          </center>
+       </center>
       <!-- 테이블 시작 -->
-      <center>
       <table>
         <tbody>
           <h4 id="재료"> 재료 </h4>
-          <tr> 
-            <th>닭 볶음탕용 </th>
-            <th>당근 1/2개</th>
-            <th>감자 3개</th>
-            <th>양파 1개</th>
-            <th>대파 1개</th>
-          </tr>
+          <ul> 
+            <div>닭 볶음탕용 </div>
+            <div>당근 1/2개</div>
+            <div>감자 3개</div>
+            <div>양파 1개</div>
+            <div>대파 1개</div> 
+          <ul>
         </tbody>
       </table>
-    </center>
   </center>     
     <h4 id="양념">양념</h4>
   </center>
