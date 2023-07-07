@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body {
+        margin: 0;
+        height: 100vh;
+      }
+      .container {
+        border: 1px solid black;
+      }
+      header {
+        background-color: brown;
+        color: aliceblue;
+        padding: 1.8em;
+        text-align: center;
+        font-size: 20px;
+      }
+      section {
+        border: 1px solid yellow;
+        display: flex;
+      }
+      article,
+      aside,
+      nav {
+        border: 1px solid black;
+        height: 400px;
+      }
+      footer {
+        background-color: brown;
+        color: white;
+        padding: 2em;
+        text-align: center;
+      }
+      nav {
+        flex: 1;
+      }
+      aside {
+        flex: 4;
+        font-size: 19px;
+        text-align: center;
+        text-shadow: 4px 6px 10px yellowgreen, 7px 4px 15px yellow;
+      }
+      article {
+        flex: 1;
+      }
+      section article {
+        display: flex;
+        flex-direction: column;
+      }
+      section article div:nth-of-type(n) {
+        border: 1px solid black;
+        font-size: 15px;
+        flex: 2;
+      }
+      section nav {
+        display: flex;
+        flex-direction: column;
+      }
+      section nav div:nth-of-type(n) {
+        border: 1px solid violet;
+        text-align: center;
+        flex: 2;
+      }
+      header:hover {
+        color: purple;
+      }
+
+      footer p {
+        text-align: center;
+        font-size: 19px;
+      }
+      div li {
+        text-align: center;
+        margin: 20px;
+      }
+      header li {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>😀 안녕하세요, 남소나의 레시피 입니다. 😀</header>
+      <section>
+        <article>
+          <div>
+            <a href="http://127.0.0.1:5500/index.html"
+              >설탕없는닭볶음탕👀
+              <img src="./img/tori.jpg" alt="" width="150px" height="180px" />
+            </a>
+          </div>
+          <div>
+            ⏳메뉴개발중⌛
+            <img
+              src="./img/2c1c4546512cdc6ff5b250a2bee056be_w.jpeg"
+              alt="메뉴개발중"
+              width="150px"
+              height="157px"
+            />
+          </div>
+        </article>
+        <aside>
+          <img
+            src="/img/감자볶음.PNG"
+            alt="asdasdasd"
+            width="660px"
+            height="360px"
+          />
+          <em>🥔 모든집에 있는 스팸으로 스팸감자채볶음 만들기 !! </em>
+        </aside>
+        <nav>
+          <div>
+            <a href="https://www.10000recipe.com/event/422"
+              ><img src="/img/광고1.jpg" alt="" width="180px" height="140px"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.10000recipe.com/event/423">
+              <img src="./img/광고2.PNG" alt="" width="180" height="140" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://shop.10000recipe.com/goods/goods_view.php?goodsNo=1000026394&utm_source=10k_web&utm_medium=main_home_event_banner&utm_campaign=g1000026394#lyZoom"
+            >
+              <img src="./img/광고3.PNG" alt="" width="180" height="100" />
+            </a>
+          </div>
+        </nav>
+      </section>
+      <footer>
+        <p>
+          저녁반찬으로 뭘 만들까 고민하다가 스팸과 함께 볶아내는
+          스팸감자채볶음을 만들었답니다.😋
+        </p>
+      </footer>
+    </div>
+    <div>
+      <br />
+      <header>
+        <strong> 재 료 </strong>
+        <li>감 자</li>
+        <em>2개</em>
+        <li>맛 소 금</li>
+        <em>0.5큰술</em>
+        <li>통 깨</li>
+        <em>적당량</em>
+        <li>스 팸</li>
+        <em>50g</em>
+        <li>식 용 유</li>
+        <em>2큰술</em>
+      </header>
+
+      <br />
+      <header>조리순서</header>
+      <div class="container" style="height: 800px">
+        <li>as</li>
+        <li>as</li>
+        <li>as</li>
+        <li>as</li>
+        <li>as</li>
+        <li>as</li>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        border: 1px solid orange;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+      article {
+        flex: 1;
+      }
+      article {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+      section:nth-of-type(1) {
+        flex: 2;
+      }
+      section:nth-of-type(2) {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <aside></aside>
+      <article></article>
+      <aside></aside>
+    </main>
+  </body>
+</html>
